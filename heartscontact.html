@@ -1,0 +1,275 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Hearts Cafe</title>
+  <link rel="icon" type="image/x-icon" href="favi.jpeg">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+ rel="stylesheet">
+  <style>
+  *{
+		margin:0;
+        padding:0;
+        box-sizing:border-box;
+	}
+    body{
+        font-family:'Poppins',sans-serif;
+        background-color:white;
+        color:#574144;
+    }
+     .nav {
+      background-color:#873030;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      padding:15px 0;
+      flex-wrap:wrap;
+    }
+
+    .nav .title h2{
+      color:white;
+      font-size:22px;
+      font-family:'Playfair Display', serif;
+    }
+
+    .nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:500;
+    }
+
+    .nav a:hover{
+      color:#ff7573;
+    }
+        h2{
+      text-align:center;
+      font-size:25px;
+      color:white;
+      padding-top:10px;
+      font-family:'Playflair display',serif;
+    }
+    h3{
+        text-align:center;
+        font-size:30px;
+        font-weight:500;
+        font-style:italic;
+        color:#574144;
+        margin:20px
+    }
+    .container{
+		display:flex;
+		justify-content:space-around;
+		padding:0 20px 50px;
+	}
+    iframe{
+        border:2px solid #574144;
+        border-radius:10px;
+        width:600px;
+        height:350px;
+        margin:40px auto 50px;
+    }
+    .map{
+		display:flex;
+		justify-content:center;
+		margin:20px 10px;
+	}
+    .addr{
+		display:flex;
+        text-align:left;
+        font-size:20px;
+        color:#574144;
+        max-width:500px;
+        margin:70px 30px;
+        padding:20px;
+        border-left:5px solid #574144;
+    }
+   
+    .addr a{
+		background-color:#873030;
+		color:white;
+		font-weight:500;
+		padding:10px;
+	    font-size: 16px;
+        border:none;
+        border-radius:8px;
+        text-decoration:none;
+	}
+    .addr a:hover{
+        background-color:#bfa5a3;
+    }
+           footer{ 
+      background-color:#873030;
+      color:white;
+      padding:40px 20px 20px;
+      font-family:'Poppins', sans-serif;
+      margin:20px auto 0;
+ 
+    }
+
+    .footer-container{
+      display:flex;
+      justify-content:space-around;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .footer-section h4{
+      margin-bottom:15px;
+      font-size:18px;
+      color:white;
+    }
+
+    .footer-section p,.footer-section a{
+      margin:5px 0;
+      font-size:15px;
+      color:white;
+      text-decoration:none;
+    }
+
+    .footer-section a{
+      color:blue;
+    }
+
+    .footer-section a:hover{
+      color:#ff7573;
+    }
+
+    .footer-bottom{
+      text-align:center;
+      padding:15px;
+      font-size:15px;
+      color:white;
+      margin-top:20px;
+      border-top:1px solid #ff7573;
+      padding-bottom:5px;
+    }
+    @media(max-width:500px){
+		header{
+			height:140px;
+			margin:10px;
+		}
+		h3{
+			font-size:24px;
+			margin:15px 0px;
+		}
+        h2{
+            font-size:30px;
+      }
+        h3{
+            font-size:20px;
+      }
+    }
+    .breadcrumb {
+      background-color: #f5eaea;
+      padding: 10px 40px;
+      font-size: 14px;
+      margin:5px auto 0px;
+    }
+
+    .breadcrumb a {
+      color: #873030;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+     header{
+		background-image:url('visit.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+        color:white;
+        padding:20px;
+        text-align:center;
+        font-size:40px;
+        font-style:bold;
+        font-family:'playflair display',serif;
+        margin:0px 30px 0px;
+        border-radius:20px;
+        height:180px;
+    }
+     h3{
+		 text-align:center;
+      font-size:35px;
+      color:#574144;
+      padding-top:10px;
+      font-family:'Playflair display',serif;
+      margin-top:20px;
+      
+  }
+
+  </style>
+</head>
+<body>
+ <nav class="nav">
+    <div class="title">
+      <h2>HEARTS CAFE &hearts;</h2>
+    </div>
+    <div class="links">
+      <a href="home.html">Home</a>
+      <a href="heartsmenu.html">Menu</a>
+      <a href="heartsbooktable.html">Book Table</a>
+      <a href="heartsfeedback.html">Feedback</a>
+      <a href="heartscontact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="breadcrumb">
+    <a href="home.html">Home</a> &gt; <span>Visit Us</span>
+  </div>
+
+  <header></header>
+  <h3><b>Visit Us</b></h3>
+  <div class="container">
+	    <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0737272395154!2d79.15635227381013!3d12.96713401497872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47f3ff107399%3A0x80ef0dbffb37d15e!2sMud%20cups!5e0!3m2!1sen!2sin!4v1747844679819!5m2!1sen!2sin" 
+      title="Mud Cup" 
+      allowfullscreen 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="addr">
+		  <i>
+			 <b>
+			  Hearts Cafe<b style="color:red;font-size:25px;">&hearts;</b></b><br>
+			  2nd Street,<br>
+			  Vellore<br>
+			  Tamil Nadu 632014<br>
+			  India<br>
+			  mail us at - heartscafe@gmail.com<br><br>
+			  <a href="mailto:poornimap381@gmail.com">Mail Us</a>
+		  </i>
+  </div>
+  </div>
+ <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>HEARTS CAFE</h4>
+        <p><a href="home.html">Home</a></p>
+        <p><a href="heartsmenu.html">Menu</a></p>
+        <p><a href="heartsbooktable.html">Book Table</a></p>
+        <p><a href="heartsfeedback.html">Feedback</a></p>
+        <p><a href="heartscontact.html">Contact</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Hearts Cafe<br>2nd Street, Vellore, Tamil Nadu, India</p>
+        <p>Email: <a href="mailto:heartscafe@gmail.com">heartscafe@gmail.com</a></p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p><a href="https://www.instagram.com/poorniii_ma/">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Twitter</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Hearts Cafe. All Rights Reserved.</div>
+  </footer>
+</body>
+</html>
+

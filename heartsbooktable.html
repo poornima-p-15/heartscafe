@@ -1,0 +1,289 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Table - Hearts Cafe</title>
+  <link rel="icon" type="image/x-icon" href="favi.jpeg">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+ rel="stylesheet">
+  <style>
+    *{
+		margin:0;
+        padding:0;
+        box-sizing:border-box;
+	}
+    body{
+        font-family:'Poppins',sans-serif;
+        background-color:white;
+        color:#574144;
+    }
+   .nav {
+      background-color:#873030;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      padding:15px 0;
+      flex-wrap:wrap;
+    }
+
+    .nav .title h2{
+      color:white;
+      font-size:22px;
+      font-family:'Playfair Display', serif;
+    }
+
+    .nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:500;
+    }
+
+    .nav a:hover{
+      color:#ff7573;
+    }
+        h2{
+      text-align:center;
+      font-size:25px;
+      color:white;
+      padding-top:10px;
+      font-family:'Playflair display',serif;
+    }
+    h3{
+		 text-align:center;
+      font-size:35px;
+      color:#574144;
+      padding-top:10px;
+      font-family:'Playflair display',serif;
+      margin-top:20px;
+      
+  }
+    header{
+		background-image:url('ftable.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+        color:#574144;
+        padding:20px;
+        text-align:center;
+        font-size:40px;
+        font-style:bold;
+        font-family:'playflair display',serif;
+        margin:5px 30px 0px;
+        border-radius:20px;
+        height:200px;
+    }
+    form{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+    }
+    table{
+        background-color:beige;
+        color:#574144;
+        padding:30px;
+        border-radius:10px;
+        border:1px solid #574144;
+    }
+    td{
+        padding:15px;
+        font-size:18px;
+    }
+    input[type="text"], input[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        border: 1px solid #574144;
+    }
+    input[type="text"]{
+        width: 200px;
+    }
+    input[type="submit"]{
+        background-color:#873030;
+        color:white;
+        font-weight:500;
+    }
+    input[type="submit"]:hover{
+        background-color:#bfa5a3;
+    }
+        footer{ 
+      background-color:#873030;
+      color:white;
+      padding:40px 20px 20px;
+      font-family:'Poppins', sans-serif;
+      margin:20px auto 0;
+ 
+    }
+
+    .footer-container{
+      display:flex;
+      justify-content:space-around;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .footer-section h4{
+      margin-bottom:15px;
+      font-size:18px;
+      color:white;
+    }
+
+    .footer-section p,.footer-section a{
+      margin:5px 0;
+      font-size:15px;
+      color:white;
+      text-decoration:none;
+    }
+
+    .footer-section a{
+      color:blue;
+    }
+
+    .footer-section a:hover{
+      color:#ff7573;
+    }
+
+    .footer-bottom{
+      text-align:center;
+      padding:15px;
+      font-size:15px;
+      color:white;
+      margin-top:20px;
+      border-top:1px solid #ff7573;
+      padding-bottom:5px;
+    }
+    @media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav .links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    font-size: 24px;
+    padding: 15px;
+    height: auto;
+  }
+
+  h3{
+    font-size: 24px;
+    padding: 10px 0;
+  }
+
+  form {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  table{
+    width:100%;
+  }
+
+  td{
+    display:block;
+    width: 100%;
+    text-align: center;
+  }
+
+  input[type="text"]{
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+    .breadcrumb {
+      background-color: #f5eaea;
+      padding: 10px 40px;
+      font-size: 14px;
+    }
+
+    .breadcrumb a {
+      color: #873030;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+ <nav class="nav">
+    <div class="title">
+      <h2>HEARTS CAFE &hearts;</h2>
+    </div>
+    <div class="links">
+      <a href="home.html">Home</a>
+      <a href="heartsmenu.html">Menu</a>
+      <a href="heartsbooktable.html">Book Table</a>
+      <a href="heartsfeedback.html">Feedback</a>
+      <a href="heartscontact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="breadcrumb">
+    <a href="home.html">Home</a> &gt; <span>Book Your Seat</span>
+  </div>
+
+  <header></header>
+<h3>Book your Table</h3>
+  <form method="post">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="person">Number of Persons:</label></td>
+        <td><input type="text" id="person" name="person" required></td>
+      </tr>
+      <tr>
+        <td><label for="table">Number of Tables:</label></td>
+        <td><input type="text" id="table" name="table" required></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Book Table">
+        </td>
+      </tr>
+    </table>
+  </form>
+ <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>HEARTS CAFE</h4>
+        <p><a href="home.html">Home</a></p>
+        <p><a href="heartsmenu.html">Menu</a></p>
+        <p><a href="heartsbooktable.html">Book Table</a></p>
+        <p><a href="heartsfeedback.html">Feedback</a></p>
+        <p><a href="heartscontact.html">Contact</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Hearts Cafe<br>2nd Street, Vellore, Tamil Nadu, India</p>
+        <p>Email: <a href="mailto:heartscafe@gmail.com">heartscafe@gmail.com</a></p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p><a href="https://www.instagram.com/poorniii_ma/">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Twitter</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Hearts Cafe. All Rights Reserved.</div>
+  </footer>
+</body>
+</html>

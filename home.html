@@ -1,0 +1,530 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hearts Cafe - Home</title>
+  <link rel="icon" type="image/x-icon" href="favi.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+    html,body{
+      max-width:100%;
+      
+      overflow-x:hidden;
+}
+
+    body{
+      background-color:white;
+      color:#574144;
+    }
+
+    .nav {
+      background-color:#873030;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      padding:15px 0;
+      flex-wrap:wrap;
+    }
+
+    .nav .title h2{
+      color:white;
+      font-size:22px;
+      font-family:'Playfair Display', serif;
+    }
+
+    .nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:500;
+    }
+
+    .nav a:hover{
+      color:#ff7573;
+    }
+
+    .breadcrumb{
+		color:black;
+      padding:10px 40px;
+      font-size:14px;
+    }
+
+    .breadcrumb a{
+      color:#873030;
+      text-decoration:none;
+      margin:0 5px;
+    }
+
+    .breadcrumb a:hover{
+      text-decoration:underline;
+    }
+
+    .hero{
+      position:relative;
+      background-image:url('cafeinterior.jpg');
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 700px;
+      border-radius: 12px;
+      margin:15px 40px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      -webkit-animation: kenburns-top 7s ease-out both;
+	        animation: kenburns-top 7s ease-out both;
+    }
+
+
+    .hero-text {
+      background-color:rgba(255, 248, 245, 0.8);
+      padding:30px;
+      border-radius:10px;
+      text-align:center;
+      max-width:70%;
+    }
+
+    .hero-text h1{
+      font-family:'Playfair Display', serif;
+      font-size:40px;
+      color:#873030;
+    }
+
+    .hero-text p{
+      font-size:18px;
+      margin-top:10px;
+      color:#574144;
+    }
+
+  .container{
+		display:flex;
+		justify-content:space-around;
+		padding:0 20px 50px;
+	}
+    iframe{
+        border:2px solid #574144;
+        border-radius:10px;
+        width:500px;
+        height:300px;
+        margin:40px auto 50px;
+    }
+    .video{
+		display:flex;
+		justify-content:center;
+		margin:40px 30px;
+	}
+    .intro{
+		display:flex;
+        text-align:left;
+        font-size:20px;
+        color:#574144;
+        max-width:500px;
+        margin:70px 30px;
+        padding:20px;
+        display:flex;
+	    background-color:beige;
+        max-width:500px;
+        border-left:5px solid #574144;
+        font-style:italic
+    }
+
+    footer{ 
+      background-color:#873030;
+      color:white;
+      padding:40px 20px 20px;
+      font-family:'Poppins', sans-serif;
+      margin:20px auto 0;
+ 
+    }
+
+    .footer-container{
+      display:flex;
+      justify-content:space-around;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .footer-section h4{
+      margin-bottom:15px;
+      font-size:18px;
+      color:white;
+    }
+
+    .footer-section p,.footer-section a{
+      margin:5px 0;
+      font-size:15px;
+      color:white;
+      text-decoration:none;
+    }
+
+    .footer-section a{
+      color:blue;
+    }
+
+    .footer-section a:hover{
+      color:#ff7573;
+    }
+
+    .footer-bottom{
+      text-align:center;
+      padding:15px;
+      font-size:15px;
+      color:white;
+      margin-top:20px;
+      border-top:1px solid #ff7573;
+      padding-bottom:5px;
+    }
+    @media(max-width: 600px) {
+      .hero-text h1 {
+        font-size: 28px;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+      }
+
+      .hero {
+        height: 300px;
+        margin: 20px;
+      }
+    }
+    @-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+ .menu{
+  background-image:url('menu1.jpg');
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:70px 70px 10px;
+  border-radius:10px;
+  position:relative;
+}
+
+.menu-items {
+  display:flex;
+  flex-wrap:wrap;
+  gap:50px;
+  justify-content:center;
+  margin-top:20px;
+  
+}
+
+.menu-grid{
+  height:180px;
+  width:250px;
+  background-color:white;
+  text-align:center;
+  border:1px solid black;
+  border-radius:30px;
+}
+
+.menu-grid img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:30px;
+}
+
+.menu-grid .desc{
+  padding:10px;
+  font-size:18px;
+  font-style:italic;
+  background-color:white;
+  border-radius:30px;
+}
+
+.menu .breadcrumb {
+  position:absolute;
+  bottom:15px;
+  left:25px;
+  font-size:18px;
+  background-color:rgba(255,255,255,0.7);
+  padding:5px 10px;
+  border-radius:5px;
+}
+
+
+    h3{
+      font-family:'Playfair Display',serif;
+      text-align:center;
+      font-size:45px;
+      font-weight:200;
+      font-style:bold;
+      color:#574144;
+      margin:200px 30px auto 30px;
+      -webkit-animation: text-shadow-drop-bl 7s both;
+      animation: text-shadow-drop-bl 7s both;
+    }
+    .menu h3{
+		position:absolute;
+      font-family:'Playfair Display',serif;
+      text-align:center;
+      font-size:45px;
+      font-weight:200;
+      font-style:bold;
+      color:#574144;
+      margin:10px auto 325px;
+      -webkit-animation: text-shadow-drop-bl 7s both;
+      animation: text-shadow-drop-bl 7s both;
+    }
+    h4{
+	font-family:'Playfair Display',serif;
+      text-align:center;
+      font-size:45px;
+      font-weight:200;
+      font-style:bold;
+      color:#574144;
+      margin:100px 30px auto 30px;
+      -webkit-animation: text-shadow-drop-bl 7s both;
+      animation: text-shadow-drop-bl 7s both;
+  }
+    @-webkit-keyframes text-shadow-drop-bl {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(0);
+  }
+  100% {
+    text-shadow: -6px 6px 18px rgba(0, 0, 0, 0.45);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes text-shadow-drop-bl {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(0);
+  }
+  100% {
+    text-shadow: -6px 6px 18px rgba(0, 0, 0, 0.45);
+    transform: translateY(-4px);
+  }
+}
+ .book{
+      background-image:url('bt.jpg');
+      background-repeat:no-repeat;
+      background-size:cover;
+      height:400px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin:70px 100px 10px;
+      position:relative;
+      border-radius:10px;
+      padding:30px;
+    }
+
+    .book p{
+      background-color:rgba(255, 248, 245, 0.8);
+      font-size: 20px;
+      color: #574144;
+      padding: 20px;
+      border-left:5px solid #574144;
+      font-style:italic;
+      max-width:100%;
+    }
+    .book .breadcrumb {
+       position:absolute;
+       margin-top:15px;
+       margin-left:25px;
+       left:25px;
+       font-size:18px;
+       background-color:rgba(255,255,255,0.7);
+       padding:5px 10px;
+       border-radius:5px;
+}
+    .book img {
+      max-height: 300px;
+      border-radius:10px;
+    }
+
+    .full{
+		background-color:beige;
+	}
+#main{
+	position:absolute;
+	margin:10px 900px 500px 20px;
+	}
+	.menu-grid:hover{
+		
+      -webkit-animation: kenburns-top 3s ease-out both;
+	        animation: kenburns-top 3s ease-out both;
+		}
+	.book .breadcrumb:hover{
+			
+      -webkit-animation: kenburns-top 2s ease-out both;
+	        animation: kenburns-top 2s ease-out both;
+	        
+	}
+	@media(max-width: 600px){
+  .book{
+    margin:30px 20px;
+    height:auto;
+    background-size:cover;
+    background-position:center;
+  }
+
+  
+}
+.desc a{
+	text-decoration:none;
+	color:#873030;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="title">
+      <h2>HEARTS CAFE &hearts;</h2>
+    </div>
+    <div class="links">
+      <a href="home.html">Home</a>
+      <a href="heartsmenu.html">Menu</a>
+      <a href="heartsbooktable.html">Book Table</a>
+      <a href="heartsfeedback.html">Feedback</a>
+      <a href="heartscontact.html">Contact</a>
+    </div>
+  </nav>
+
+ 
+
+  <div class="hero">
+	 <!-- <div id="main" class="breadcrumb">
+    <a href="home.html" >Home</a> &gt; <span>Welcome</span>
+  </div>-->
+    <div class="hero-text">
+      <h1>Warm Vibes, Rich Aromas</h1>
+      <p>Hearts Cafe is more than coffee – it's a place to connect, unwind, and savor life’s little joys.</p>
+    </div>
+  </div>
+<div class="full">
+	<h3>Get What Your Heart Desire &hearts;</h3>
+ <div class="menu">
+	 <h3>Our Specials</h3>
+  <div class="menu-items">
+    <div class="menu-grid">
+      <img src="c1.jpg" alt="Latte">
+      <div class="desc"><a href="heartsmenu.html#beverages">Beverages</a></div>
+    </div>
+    <div class="menu-grid">
+      <img src="p1.jpg" alt="Croissant">
+      <div class="desc"><a href="heartsmenu.html#pasteries">Pasteries</a></div>
+    </div>
+    <div class="menu-grid">
+      <img src="coo1.jpg" alt="choco chip cookie">
+      <div class="desc"><a href="heartsmenu.html#cookies">Cookies</a></div>
+    </div>
+  </div>
+  <div class="breadcrumb">
+    <span>Home</span> → <a href="heartsmenu.html">View All</a>
+  </div>
+</div>
+<h4>Reserve a moment that’s all yours (and maybe someone else's too)..</h4>
+<div class="book">
+	<div class="breadcrumb">
+   <span>Home</span> &gt <a href="heartsbooktable.html">Book Your Seat</a>;
+  
+   
+    <p>
+    A seat for two, a coffee near,<br>
+    Soft laughs and glances linger here.<br>
+    The table waits, the time feels right—<br>
+    Book your moment, hold it tight.
+  </p>
+   </div>
+</div>
+
+	<h4>Come Say Hello!</h4>
+
+  <div class="container">
+
+      <div class="video">
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/_bNbada12iM" 
+          title="Hearts Cafe Promo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</div>
+  <div class="intro">
+		  <i>
+			
+			  <div class="po">
+    At Hearts Cafe, every sip is made with love. Whether you're here for a strong filter coffee,
+     a cozy cappuccino, or a heartwarming hot chocolate, we promise to make your moments special.<br><br>-Poornima:)
+  </div>
+  
+		  </i>
+  </div>
+  </div>
+</div>
+	
+   <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>HEARTS CAFE</h4>
+        <p><a href="home.html">Home</a></p>
+        <p><a href="heartsmenu.html">Menu</a></p>
+        <p><a href="heartsbooktable.html">Book Table</a></p>
+        <p><a href="heartsfeedback.html">Feedback</a></p>
+        <p><a href="heartscontact.html">Contact</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Hearts Cafe<br>2nd Street, Vellore, Tamil Nadu, India</p>
+        <p>Email: <a href="mailto:heartscafe@gmail.com">heartscafe@gmail.com</a></p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p><a href="https://www.instagram.com/poorniii_ma/">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Twitter</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Hearts Cafe. All Rights Reserved.</div>
+  </footer>
+
+</body>
+</html>
